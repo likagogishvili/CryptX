@@ -1,0 +1,111 @@
+.price {
+  width: 100%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.price .priceCont {
+  width: 60%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 900px) {
+  .price .priceCont div {
+    width: 40%;
+    height: 60%;
+  }
+}
+
+.price .priceCont div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+  background-color: rgba(248, 248, 248, 0.91);
+  border-left: 10px solid #92c63b;
+  border-radius: 10px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 1%;
+}
+
+.price .priceCont div .first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+}
+
+.price .priceCont div .first .p2 {
+  margin-left: 10%;
+}
+
+.price .priceCont div .first img {
+  margin-right: 5%;
+}
+
+.price .priceCont div:nth-child(3) {
+  border-left: 10px solid #d1d5da;
+}
+
+.price .priceCont div p {
+  font-family: "Open Sans", sans-serif;
+  height: 30%;
+  color: black;
+  font-size: 0.8rem;
+  text-align: right;
+}
+
+.price .priceCont div p:nth-child(2) {
+  color: #889cb8;
+}
+
+@media (max-width: 900px) {
+  .price .priceCont div p {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .price .priceCont {
+    width: 80%;
+    height: 80px;
+  }
+}
+/*# sourceMappingURL=Prices.css.map */

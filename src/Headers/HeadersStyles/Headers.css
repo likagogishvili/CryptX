@@ -1,0 +1,82 @@
+.headers {
+  width: 99%;
+  height: 30px;
+  border-top: solid 2px lightgrey;
+  border-bottom: solid 2px lightgrey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: right;
+  margin-right: 3%;
+  font-size: 0.9rem;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.headers :first-of-type {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  text-align: center;
+}
+
+.headers :nth-of-type(2) {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  text-align: center;
+}
+
+.headers :nth-of-type(3) {
+  -webkit-box-flex: 8;
+      -ms-flex-positive: 8;
+          flex-grow: 8;
+}
+
+.headers :nth-of-type(4) {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+  text-align: center;
+}
+
+.headers :nth-of-type(5), .headers :nth-of-type(6), .headers :nth-of-type(7) {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  text-align: center;
+}
+
+.headers :nth-of-type(8) {
+  -webkit-box-flex: 4;
+      -ms-flex-positive: 4;
+          flex-grow: 4;
+  text-align: center;
+}
+
+.headers :nth-of-type(9) {
+  -webkit-box-flex: 5;
+      -ms-flex-positive: 5;
+          flex-grow: 5;
+  text-align: center;
+}
+
+.headers :nth-of-type(10) {
+  -webkit-box-flex: 5;
+      -ms-flex-positive: 5;
+          flex-grow: 5;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .headers {
+    font-size: 0.5rem;
+  }
+}
+/*# sourceMappingURL=Headers.css.map */

@@ -1,0 +1,122 @@
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Roboto', sans-serif;
+@mixin flexcolumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.price {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  p {
+    width: 100%;
+    font-size: 1.5rem;
+    margin: 2%;
+    color: #384152;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+  }
+  @media (max-width: 900px) {
+    p {
+      font-size: 1.3rem;
+    }
+  }
+  .priceCont {
+    width: 60%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    @media (max-width: 900px) {
+      div {
+        width: 40%;
+        height: 60%;
+      }
+    }
+    div {
+      @include flexcolumn();
+      width: 30%;
+      background-color: rgba(248, 248, 248, 0.91);
+      border-left: 10px solid #92c63b;
+      border-radius: 10px;
+      align-items: flex-start;
+      justify-content: space-around;
+      padding-left: 1%;
+      height: 100%;
+      animation-name: colorChangeAnimation;
+      animation-duration: 3s;
+      @keyframes colorChangeAnimation {
+        from {
+          border-color: #4caf4f;
+        }
+        to {
+          border-color: #92c63b;
+        }
+      }
+      .first {
+        display: flex;
+        width: 90%;
+        height: 30%;
+        flex-direction: row;
+        justify-content: space-between;
+        border: none;
+        align-items: center;
+        p {
+          width: 70%;
+          height: 50%;
+        }
+        .p2 {
+          width: 12%;
+          height: 50%;
+          color: #92c63b;
+        }
+        img {
+          width: 7%;
+          height: 50%;
+          margin-top: 1.5%;
+        }
+        @media (max-width: 900px) {
+          p {
+            width: 100%;
+            height: 50%;
+          }
+          .p2 {
+            display: none;
+          }
+          img {
+            display: none;
+          }
+        }
+      }
+      &:nth-child(3) {
+        border-left: 10px solid #d1d5da;
+        animation: none !important;
+      }
+      p {
+        font-family: "Open Sans", sans-serif;
+        color: black;
+        font-size: 0.8rem;
+        text-align: left;
+        width: 80%;
+        &:nth-child(2) {
+          color: #889cb8;
+        }
+      }
+
+      @media (max-width: 900px) {
+        p {
+          font-size: 0.37rem;
+        }
+      }
+    }
+  }
+  @media (max-width: 900px) {
+    .priceCont {
+      width: 80%;
+      height: 50px;
+    }
+  }
+}
